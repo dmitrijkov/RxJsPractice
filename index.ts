@@ -1,21 +1,4 @@
-import { of } from 'rxjs'; 
-import { map } from 'rxjs/operators';
+import { from } from "rxjs";
 
-const data = of([
-  {
-    brand: 'porsche',
-    model: '911'
-  },
-  {
-    brand: 'porsche',
-    model: 'macan'
-  },
-  {
-    brand: 'ferarri',
-    model: '458'
-  },
-  {
-    brand: 'lamborghini',
-    model: 'urus'
-  }
-]);
+const s = from("abcdefghijklmnopqrstuvwxyz");
+s.subscribe(el => console.log(el));
