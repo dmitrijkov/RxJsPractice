@@ -8,5 +8,6 @@ let obs = new Observable(subscriber => {
 
 obs.subscribe(el => console.log(el));
 obs.subscribe(el => console.log(el));
+obs.subscribe(el => console.log(el));
 
 
